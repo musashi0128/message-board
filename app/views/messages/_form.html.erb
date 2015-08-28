@@ -12,10 +12,12 @@
     </div>
   <% end %>
 
-  名前:
-  <%= f.text_field :name %>
+  名前<br />
+  <%= f.text_field :name, class: "n-field"  %>
+  <br />
 
-  内容:
-  <%= f.text_field :body %>
-  <%= f.submit class: "btn btn-sm btn-primary" %>
+  内容<br />
+  <%= f.text_area :body, class: "n-area", size: "40x5" %>
+  <br />
+  <%= f.submit class: "btn btn-sm btn-primary s-submit" %>
 <% end %>
